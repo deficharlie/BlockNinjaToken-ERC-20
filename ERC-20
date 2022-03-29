@@ -7,7 +7,7 @@ pragma solidity ^0.5.00;
 // Symbol      : NINJA
 // Name        : BlockNinjaToken
 // Total supply: 70000000
-// Decimals    : 8
+// Decimals    : 18
 //
 // Enjoy.
 //
@@ -100,10 +100,11 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract PratToken is ERC20Interface, Owned, SafeMath {
+contract BlockNinjaToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
-    uint8 public decimals;
+    uint
+    public decimals;
     uint public _totalSupply;
 
     mapping(address => uint) balances;
@@ -116,7 +117,7 @@ contract PratToken is ERC20Interface, Owned, SafeMath {
     constructor() public {
         symbol = "NINJA";
         name = "BlockNinjaToken";
-        decimals = 8;
+        decimals = 18;
         _totalSupply = 70000000;
         balances[0xde3B54405b81B667Bab2B8eFCFF289c0862e5C4c] = _totalSupply;
         emit Transfer(address(0), 0xde3B54405b81B667Bab2B8eFCFF289c0862e5C4c, _totalSupply);
