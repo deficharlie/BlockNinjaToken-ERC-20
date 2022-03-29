@@ -6,7 +6,7 @@ pragma solidity ^0.5.00;
 // Deployed to : 0xde3B54405b81B667Bab2B8eFCFF289c0862e5C4c
 // Symbol      : BNJA
 // Name        : BlockNinjaToken
-// Total supply: 7000000000
+// Total supply: 100000000000000000000000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -117,7 +117,7 @@ contract BlockNinjaToken is ERC20Interface, Owned, SafeMath {
         symbol = "BNJA";
         name = "BlockNinjaToken";
         decimals = 18;
-        _totalSupply = 7000000000;
+        _totalSupply = 100000000000000000000000000;
         balances[0xde3B54405b81B667Bab2B8eFCFF289c0862e5C4c] = _totalSupply;
         emit Transfer(address(0), 0xde3B54405b81B667Bab2B8eFCFF289c0862e5C4c, _totalSupply);
     }
